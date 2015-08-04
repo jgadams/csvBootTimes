@@ -1,0 +1,6 @@
+This Powershell script can query Windows event logs both on the local machine and over a LAN for system boot times. It outpus in CSV with fields: (Hostname,BootTime,ErrorMessage).
+
+Parameters:
+Max: max number of events to retrieve from log.
+HostnameFile: file containing hostnames separated by newlines, to be input object for Get-Content.
+Call like: ./csvBootTimes.ps1  -Max 5  -HostnameFile hn.txt
